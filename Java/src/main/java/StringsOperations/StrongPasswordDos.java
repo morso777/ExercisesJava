@@ -14,7 +14,7 @@ public class StrongPasswordDos {
         //check if the string given is between 6-20 characters
 
         if (s.length() < 6 || s.length() > 20) {
-            System.out.println("invalid password");
+            System.out.println(" invalid password ");
             return false;
         }
 
@@ -30,15 +30,12 @@ public class StrongPasswordDos {
 
             if (Character.isUpperCase(ch)) {
                 hasUpperCase = true;
-
             }
             if (Character.isLowerCase(ch)) {
                 hasLowerCase = true;
-
             }
             if (Character.isDigit(ch)) {
                 hasdigit = true;
-
             }
             if (!Character.isLetter(ch) && !Character.isDigit(ch) && !Character.isWhitespace(ch)) {
                 hasSpecialChar = true;
